@@ -4,4 +4,4 @@
 # Accueil
 Welcome Home !
 
-[AlléGreat](/new-page)
+[AlléGreat](/home/allegreat)
