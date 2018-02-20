@@ -1,7 +1,7 @@
 <!-- TITLE: Home -->
 <!-- SUBTITLE: Mon Wiki -->
 
-# Acceuil
+# Accueil
 Welcome Home !
 
 [AlléGreat](/new-page)
