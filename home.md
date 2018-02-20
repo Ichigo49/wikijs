@@ -4,4 +4,4 @@
 # Acceuil
 Welcome Home !
 
-[AlléGreat](http://raspberrypi:9446/new-page)
+[AlléGreat](/new-page)
