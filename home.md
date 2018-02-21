@@ -11,3 +11,7 @@ Welcome Home !
 # PowerShell
 
 [PowerShell](/powershell)
+
+# Tips for wiki.js
+[emoji](https://www.webpagefx.com/tools/emoji-cheat-sheet/)
+[docs](https://docs.requarks.io/wiki)
