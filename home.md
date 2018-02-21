@@ -4,5 +4,5 @@
 # Accueil
 Welcome Home !
 
-[AlléGreat](/home/allegreat)
+[AlléGreat](/allegreat)
 [PowerShell](/powershell)
