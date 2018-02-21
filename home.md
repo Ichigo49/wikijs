@@ -1,5 +1,5 @@
 <!-- TITLE: Home -->
-<!-- SUBTITLE: Mon Wiki -->
+<!-- SUBTITLE: Mon Wiki :ghost: -->
 
 # Accueil
 Welcome Home !
