@@ -3,6 +3,6 @@
 
 # WIKI.JS
 Parceque c'est tout frais !
-*  Node.js
+*  [Node.js](https://nodejs.org/en/download/package-manager/)
 *  Git
 *  MongoDB
