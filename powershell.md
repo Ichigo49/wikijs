@@ -24,3 +24,13 @@ $update=(Invoke-WebRequest ('https://dynupdate.no-ip.com/nic/update?hostname='+$
 $mongodump = 'C:\Program Files\MongoDB\Server\3.6\bin\mongodump.exe'
 &$mongodump /h 'ds243008.mlab.com' /port:43008 /d malmongo /u $($cred.UserName) /p $($cred.GetNetworkCredential().password) /o D:\Backup\Mongo
 ```
+
+-----
+
+# Create Scheduled Tasks
+```powershell
+$action = New-ScheduledTaskAction -Execute 'Powershell.exe' `
+-Argument '-NoProfile -WindowStyle Hidden -command "& {get-eventlog -logname Application -After ((get-date).AddDays(-1)) | Export-Csv -Path c:\fso\applog.csv -Force -NoTypeInformation}"'
+$trigger =  New-ScheduledTaskTrigger -Daily -At 9am
+Register-ScheduledTask -Action $action -Trigger $trigger -TaskName "AppLog" -Description "Daily dump of Applog"
+```
