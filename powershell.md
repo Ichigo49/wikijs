@@ -72,3 +72,10 @@ The other way to configure PSScriptAnalyzer is via a script analyzer settings fi
 
 This will configure Visual Studio Code to use the PSScriptAnalyzerSettings.psd1 file in the root of your workspace folder to determine which rules to execute.
 (Source : https://blogs.technet.microsoft.com/heyscriptingguy/2017/01/12/visual-studio-code-editing-features-for-powershell-development-part-2/ )
+
+# Export Scheduled Tasks
+```
+> Get-ScheduledTask -TaskPath '\MAL\' | % {
+$fn = 'D:\Backup\SchedTasks\' + $_.TaskName + '.xml'
+Export-ScheduledTask -TaskName $_.TaskName -TaskPath $_.TaskPath | Out-File $fn}
+```
