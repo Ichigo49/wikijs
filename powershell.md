@@ -74,7 +74,7 @@ This will configure Visual Studio Code to use the PSScriptAnalyzerSettings.psd1 
 (Source : https://blogs.technet.microsoft.com/heyscriptingguy/2017/01/12/visual-studio-code-editing-features-for-powershell-development-part-2/ )
 
 # Export Scheduled Tasks
-```
+```powershell
 > Get-ScheduledTask -TaskPath '\MAL\' | % {
 $fn = 'D:\Backup\SchedTasks\' + $_.TaskName + '.xml'
 Export-ScheduledTask -TaskName $_.TaskName -TaskPath $_.TaskPath | Out-File $fn}
