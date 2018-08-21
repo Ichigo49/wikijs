@@ -79,3 +79,13 @@ This will configure Visual Studio Code to use the PSScriptAnalyzerSettings.psd1 
 $fn = 'D:\Backup\SchedTasks\' + $_.TaskName + '.xml'
 Export-ScheduledTask -TaskName $_.TaskName -TaskPath $_.TaskPath | Out-File $fn}
 ```
+
+# Monitoring Disk Raspberryi
+Script : /root/scripts/stats.sh
+
+df | awk '{print $1","$2","$3","$4","$5","$6" "$7}' >/srv/dev-disk-by-label-DATA500/website/MAL_HOME/raspdisk.txt
+
+Cron : \*/5 * * * * /root/scripts/stats.sh
+toutes les 5 minutes, tous les jours
+
+Sur PC Windows, script : F:\Documents\Scripts\psh-tools\Scripts\Get-DiskXMLinfo.ps1
