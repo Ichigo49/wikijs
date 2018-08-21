@@ -83,7 +83,9 @@ Export-ScheduledTask -TaskName $_.TaskName -TaskPath $_.TaskPath | Out-File $fn}
 # Monitoring Disk Raspberryi
 Script : /root/scripts/stats.sh
 
+```bash
 df | awk '{print $1","$2","$3","$4","$5","$6" "$7}' >/srv/dev-disk-by-label-DATA500/website/MAL_HOME/raspdisk.txt
+```
 
 Cron : \*/5 * * * * /root/scripts/stats.sh
 toutes les 5 minutes, tous les jours
